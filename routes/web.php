@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('hei', function () {
+	return "Hei, Selamat datang di blog laravel saya";
+});
+
+Route::get('blog', function () {
+	return view('blog');
+});
+
+Route::get('pegawai', 'PegawaiController@index');
